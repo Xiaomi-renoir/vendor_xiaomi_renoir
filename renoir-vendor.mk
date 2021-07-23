@@ -67,7 +67,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/renoir/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/xiaomi/renoir/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/renoir/proprietary/product/vendor_overlay/30/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib/soundfx/libvolumelistener.so \
-    vendor/xiaomi/renoir/proprietary/product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/soundfx/libvolumelistener.so
+    vendor/xiaomi/renoir/proprietary/product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/soundfx/libvolumelistener.so \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/common.cfg \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfm.cfg \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfs.cfg
 
 PRODUCT_PACKAGES += \
     DeviceInfo \
@@ -76,4 +79,8 @@ PRODUCT_PACKAGES += \
     embms \
     dpmserviceapp \
     ims \
-    qcrilmsgtunnel
+    qcrilmsgtunnel \
+    MobileFeliCaClient \
+    MobileFeliCaMenuMainApp \
+    MobileFeliCaSettingApp \
+    MobileFeliCaWebPluginBoot

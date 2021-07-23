@@ -85,3 +85,42 @@ android_app_import {
 	system_ext_specific: true,
 }
 
+android_app_import {
+	name: "MobileFeliCaClient",
+	owner: "xiaomi",
+	apk: "proprietary/system/app/MobileFeliCaClient/MobileFeliCaClient.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "MobileFeliCaMenuMainApp",
+	owner: "xiaomi",
+	apk: "proprietary/system/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "MobileFeliCaSettingApp",
+	owner: "xiaomi",
+	apk: "proprietary/system/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "MobileFeliCaWebPluginBoot",
+	owner: "xiaomi",
+	apk: "proprietary/system/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
