@@ -70,7 +70,24 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/renoir/proprietary/product/vendor_overlay/30/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/30/lib64/soundfx/libvolumelistener.so \
     vendor/xiaomi/renoir/proprietary/vendor/etc/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/common.cfg \
     vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfm.cfg \
-    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfs.cfg
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfs.cfg \
+    vendor/xiaomi/renoir/proprietary/vendor/bin/pnscr:$(TARGET_COPY_OUT_VENDOR)/bin/pnscr \
+    vendor/xiaomi/renoir/proprietary/vendor/bin/pnscr-rf:$(TARGET_COPY_OUT_VENDOR)/bin/pnscr-rf \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/libnfc-mtp-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100.conf \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-mtp-SN100_38_4MHZ.conf \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/libnfc-qrd-SN100.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100.conf \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-qrd-SN100_38_4MHZ.conf \
+    vendor/xiaomi/renoir/proprietary/vendor/lib/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci.nqx.default.hw.so \
+    vendor/xiaomi/renoir/proprietary/vendor/lib64/nfc_nci.nqx.default.hw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.nqx.default.hw.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib/libnqnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnqnfc-nci.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib/libnqnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libnqnfc_nci_jni.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib/libsn100nfc-nci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsn100nfc-nci.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib/libsn100nfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsn100nfc_nci_jni.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib64/libnqnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnqnfc-nci.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib64/libnqnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libnqnfc_nci_jni.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib64/libsn100nfc-nci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsn100nfc-nci.so \
+    vendor/xiaomi/renoir/proprietary/system_ext/lib64/libsn100nfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsn100nfc_nci_jni.so
 
 PRODUCT_PACKAGES += \
     DeviceInfo \
@@ -80,6 +97,7 @@ PRODUCT_PACKAGES += \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
+    NQNfcNci \
     MobileFeliCaClient \
     MobileFeliCaMenuMainApp \
     MobileFeliCaSettingApp \
